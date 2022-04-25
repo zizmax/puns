@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>puns</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel='stylesheet' type='text/css'>
+<style>
+      html{
+        width: 100%;
+      }
+      body {
+          font-family: 'Ubuntu', sans-serif;
+          background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%) fixed;
+      }
+      a{
+        color: #ffffff;
+      }
+      a:hover{
+        color: orange;
+      }
+      #header {
+          text-align: center;
+          color: #444;
+          font-size: 30px;
+      }
+      #pun{
+        padding-top: 50px;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+      }
+      #name{
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+      }
+      #content {
+        text-align: center;
+        font-size: 20px;
+        color: #ffffff;
+
+
+      }
+      #footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        color: #ffffff;
+      }
+    </style>
+</head>
+<body>
+<div id="header">
+<p id="pun"> </p>
+<p id="name"></p>
+<script type="text/javascript">
+    <!--
+    var puns = [{
+        quote: "Time flies like an arrow, fruit flies like a banana.",
+        name:"Anonymous"
+      },
+      {
+        quote:"You can tune a guitar, but you can't tuna fish. Unless of course, you play bass.",
+        name:"Douglas Adams"
+      },
+      {
+        quote: "Did you hear about the little moron who strained himself while running into the screen door?",
+        name:"Isaac Asimov"
+      },
+      {
+        quote:"Why can a man never starve in the Great Desert? <br> Because he can eat the sand which is there. <br> But what brought the sandwiches there? <br> Why, Noah sent Ham, and his descendants mustered and bred.",
+        name:"Richard Whately"
+      },
+      {
+        quote:"Atheism is a non-prophet institution.",
+        name:"George Carlin"
+      },
+      {
+        quote: "Immanuel doesn't pun, he Kant",
+        name:"Oscar Wilde"
+      },
+      {
+        quote:"Puns are the highest form of literature.",
+        name:"Alfred Hitchcock"
+      },
+      {
+        quote:"A dyslexic poet writes inverse.",
+        name:"George Carlin"
+      },
+      {
+        quote: "No matter how hard you push the envelope, it will still be stationary",
+        name:"Anonymous"
+      },
+      {
+        quote:"I held a door open for a clown the other day. It was a nice jester",
+        name:"Anonymous"
+      },
+      {
+        quote:"If you're ever attacked by a gang of clowns, go for the juggler.",
+        name:"Anonymous"
+      },
+      {
+        quote:"I was assaulted by a gang of mimes once. They did unspeakable things to me.",
+        name:"Anonymous"
+      },
+      {
+        quote:"Hanging is too good for a man who makes puns; he should be drawn and quoted.",
+        name:"Fred Allen"
+      },
+      {
+        quote:"Denial ain’t just a river in Egypt.",
+        name:"Possibly Mark Twain"
+      },
+      {
+        quote:"We must all hang together or assuredly we shall all hang separately.",
+        name:"Benjamin Franklin"
+      },
+      {
+        quote:"The shovel is a ground breaking invention.",
+        name:"Anonymous"
+      },
+      {
+        quote:"A scarecrow says, 'This job isn't for everyone, but hay, it's in my jeans.'",
+        name:"Anonymous"
+      },
+      {
+        quote:"I hate negative numbers and will stop at nothing to avoid them.",
+        name:"Anonymous"
+      },
+      {
+        quote:"The whiteboard is a remarkable invention.",
+        name:"Anonymous"
+      },
+      {
+        quote:"I bought a wooden whistle but it wooden whistle.",
+        name:"Anonymous"
+      },
+      {
+        quote:"He was addicted to the hokey pokey but he turned himself around.",
+        name:"Anonymous"
+      }]
+
+    var n = localStorage.getItem('refreshCounter');
+
+    if (n == null) {
+      n = Math.floor((puns.length-1)*Math.random());
+    }
+
+    n++;
+
+    localStorage.setItem("refreshCounter", n);
+
+    var i = n % puns.length
+    document.getElementById('pun').innerHTML = puns[i].quote;
+    document.getElementById('name').innerHTML = "~" + puns[i].name
+    //-->
+    </script>
+</div>
+<div id="content">
+<a href="https://puns.us"> <i class="fa fa-refresh fa-spin"> </i> Refresh me! <i class="fa fa-refresh fa-spin"> </i></a>
+</div>
+<div id="footer">
+<p>&#169; Nate</p>
+</div>
+</body>
+</html>
